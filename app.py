@@ -179,8 +179,7 @@ if page == "Início":
     <tr>
     <td>Sedan Intermediário</td><td>R$ 599,00</td><td>R$ 2.000,00</td>
     </tr>
-   </table>
-   """
+   </table> """
 
 # Renderiza o HTML no Streamlit
 st.markdown(tabela_html, unsafe_allow_html=True)
