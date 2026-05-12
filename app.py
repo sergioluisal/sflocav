@@ -159,31 +159,9 @@ if page == "Início":
             </div>
         """, unsafe_allow_html=True)
 
-    st.markdown("<br>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
     
     st.markdown("### Nossos Planos Exclusivos")
-
-  # Construindo a tabela via HTML string
-   tabela_html = """
-    <table style="width:100%; border-collapse: collapse;">
-     <tr style="background-color: #333; color: white;">
-    <th>Categoria</th><th>Semanal</th><th>Calção</th>
-    </tr>
-    <tr>
-    <td>Compacto Econômico</td><td>R$ 700,00</td><td>R$ 1.700,00</td>
-    </tr>
-     <!-- LINHA EM BRANCO (Fundo Branco e Texto Branco) -->
-    <tr style="background-color: white; color: white; height: 30px;">
-    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
-     </tr>
-    <tr>
-    <td>Sedan Intermediário</td><td>R$ 599,00</td><td>R$ 2.000,00</td>
-    </tr>
-   </table> """
-
-# Renderiza o HTML no Streamlit
-st.markdown(tabela_html, unsafe_allow_html=True)
-    
     planos_data = {
         #"Categoria": ["Compacto Econômico", "Sedan Intermediário", "Premium Executivo"],
         #"Semanal": ["R$ 700,00", "R$ 599,00", "R$ 799,00"],
