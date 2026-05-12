@@ -158,46 +158,19 @@ if page == "Início":
                 <p>Planos que se moldam ao seu bolso, com opções semanais e mensais.</p>
             </div>
         """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
     
-   st.markdown("### Nossos Planos Exclusivos")
-    
-    # CSS específico para garantir que as linhas da tabela fiquem brancas e visíveis
-    st.markdown("""
-        <style>
-        .tabela-fix {
-            width: 100%;
-            border-collapse: collapse;
-            color: white;
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-        .tabela-fix th, .tabela-fix td {
-            border: 1px solid #FFFFFF !important; /* Força a linha a ser branca */
-            padding: 12px;
-            text-align: center;
-        }
-        .tabela-fix th {
-            background-color: #FFD700;
-            color: #001f3f;
-        }
-        </style>
-        
-        <table class="tabela-fix">
-            <thead>
-                <tr>
-                    <th>Categoria</th>
-                    <th>Semanal</th>
-                    <th>Caução</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Compacto Econômico</td>
-                    <td>R$ 700,00</td>
-                    <td>R$ 1.700,00</td>
-                </tr>
-            </tbody>
-        </table>
-    """, unsafe_allow_html=True)
+    st.markdown("### Nossos Planos Exclusivos")
+    planos_data = {
+        #"Categoria": ["Compacto Econômico", "Sedan Intermediário", "Premium Executivo"],
+        #"Semanal": ["R$ 700,00", "R$ 599,00", "R$ 799,00"],
+        #"Mensal": ["R$ 1.890,00", "R$ 2.290,00", "R$ 2.990,00"],
+        #"KMs Inclusos": ["2.000 km/mês", "2.500 km/mês", "3.000 km/mês"]
+        "Categoria": ["Compacto Econômico"],
+        "Semanal": ["R$ 700,00"],
+        "Calção": ["R$ 1.700,00"]
+    }
     st.table(planos_data)
     
     col_cta_left, col_cta_center, col_cta_right = st.columns([1, 2, 1])
