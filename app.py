@@ -158,8 +158,6 @@ if page == "Início":
                 <p>Planos que se moldam ao seu bolso, com opções semanais e mensais.</p>
             </div>
         """, unsafe_allow_html=True)
-
-    st.markdown("<br>", unsafe_allow_html=True)
     
    st.markdown("### Nossos Planos Exclusivos")
     
