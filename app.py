@@ -170,7 +170,7 @@ if page == "Início":
         "Categoria": ["Compacto Econômico"],
         "Semanal": ["R$ 700,00"],
         "Calção": ["R$ 1.700,00"]
-    }
+    }, hide_index=True)
     st.table(planos_data)
     
     col_cta_left, col_cta_center, col_cta_right = st.columns([1, 2, 1])
